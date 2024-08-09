@@ -51,7 +51,7 @@ const ReviewCard = ({ review }) => {
               outOf={review.out_of}
             />
             <p className="text-gray-500 ml-1 text-xs md:text-base">
-              Date: {review.date}
+              {review.date}
             </p>
           </div>
         </div>
