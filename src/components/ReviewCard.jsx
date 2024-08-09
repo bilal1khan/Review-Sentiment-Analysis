@@ -6,7 +6,7 @@ const StarRating = ({ rating, outOf }) => {
   const filledStars = Math.round((rating / outOf) * totalStars);
 
   return (
-    <div className="flex items-center mt-1">
+    <div className="flex items-center">
       {Array.from({ length: totalStars }, (_, index) => (
         <svg
           key={index}
@@ -35,7 +35,7 @@ const ReviewCard = ({ review }) => {
         <img
           src={review.source.icon}
           alt={review.source.name}
-          className="w-12 h-12 rounded-full mt-2 mr-4"
+          className="w-10 h-10 rounded-full mr-2 mt-2 md:w-12 md:h-12 md:mr-2"
         />
         <div>
           <div className=" flex mt-1 text-xs md:text-base">
@@ -50,7 +50,9 @@ const ReviewCard = ({ review }) => {
               rating={review.rating_review_score}
               outOf={review.out_of}
             />
-            <p className="text-gray-500 ml-1 text-sm">Date: {review.date}</p>
+            <p className="text-gray-500 ml-1 text-xs md:text-base">
+              Date: {review.date}
+            </p>
           </div>
         </div>
       </div>
