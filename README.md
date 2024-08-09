@@ -1,3 +1,6 @@
+#Deployed App Live Link: https://review-sentiment-analysis-alpha.vercel.app/
+
+
 ## Running React on Replit
 
 [React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
